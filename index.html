@@ -7,14 +7,61 @@
         <title>برنامه روزانه</title>
     </head>
     <body>
-        <header>
-
+        <!--Start Header Section-->
+        <header id="header">
+            <div class="header-section">
+                <div class="header-right">
+                    <div class="logo" id="logo">
+                        <img src="icons/logo.svg" alt="لوگو">
+                    </div>
+                </div>
+                <div class="header-left">  
+                    <div class="profile-section">
+                        <img src="icons/user.svg" alt="کاربر">
+                        <span>محمد جمال شورابی</span>
+                    </div>
+                    <div id="logout">
+                        <img src="icons/logout.svg" alt="خروج">
+                    </div>
+                </div>
+            </div>
         </header>
-        <main>
-
+        <!--Start Main Content-->
+        <main class="main" id="main">
+            <!--Start Input Section-->
+            <div class="input-section">
+                <input type="text" id="todo-input" placeholder="کار جدید خود را وارد کنید..." />
+                <button id="add-btn">
+                    <img src="icons/plus.svg" alt="افزودن">
+                </button>
+            </div>
+            <!--Start Filter Section-->
+            <div class="filter-section">
+                <button class="filer-btn active" data-filter="all">همه</button>
+                <button class="filer-btn" data-filter="pending">باقی مانده</button>
+                <button class="filer-btn" data-filter="completed">انجام شده</button>
+            </div>
+            <!--Start ToDo List-->
+            <ul class="todo-list" id="todo-list">
+                <li class="todo-item">
+                    <span class="todo-text">طراحی بخش هدر اپلیکیشن تودولیست</span>
+                    <div class="todo-actions">
+                        <button class="check-btn">✓</button>
+                        <button class="delete-btn">✕</button>
+                    </div>
+                </li>
+                <li class="todo-item completed">
+                    <span class="todo-text">راه‌اندازی گیت روی سیستم</span>
+                    <div class="todo-actions">
+                        <button class="check-btn">✓</button>
+                        <button class="delete-btn">✕</button>
+                    </div>
+                </li>
+            </ul>
         </main>
-        <footer>
-
+        <footer class="footer" id="footer">
+            <span>تمام حقوق مادی و معنوی این سایت متعلق به محمد جمال شورابی می‌باشد</span>
         </footer>
+        <script src="script.js"></script>
     </body>
 </html>
